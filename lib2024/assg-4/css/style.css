@@ -1,0 +1,162 @@
+body, header, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+@font-face{
+	font-family: "OpenSans-Regular";
+	src: url("../fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+h1,h2,h3,h4,a,p{
+	font-family: "OpenSans-Regular";
+}
+
+.body{
+	background: url(../img/background.png);
+	background-size: auto;
+}
+
+.website-header{
+	background: #7cc576;
+}
+
+.img-logo{
+	max-width: 100%;
+	padding-left: 20px;
+	padding-top: 10px;
+	display: flex;
+}
+
+.h1-class{
+	padding-left: 50px;
+	width: 50%;
+}
+
+.nav-btns{
+	background: #6dcff6;
+	width: 25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+.main-nav{
+	width: 100%;
+}
+
+.main-nav-button{
+	width: 95%;
+	display:flex;
+	margin:auto;
+}
+
+a:link {
+  	text-decoration: none;
+  	color: black;
+}
+
+.main-content {
+	float: left;
+	width: 70%;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right:15px;
+}
+
+.mainsite-sidebar {
+	float: left;
+	width: 30%;
+	box-sizing: border-box;
+	padding-left: 15px;
+	padding-right:15px;
+}
+
+.img-sidebar{
+	margin-top: 65px;
+}
+
+.h3-class{
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	padding-left: 15px;
+}
+
+.image-gallery{
+	width: 100%;
+	display:flex;
+}
+.img-secondary{
+	width: 33%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.img{
+	display: block;
+	margin: auto;
+}
+
+.h4-class{
+	text-align: center;
+}
+
+footer {
+	background: #7cc576;
+}
+
+#footer-div{
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+#footer-text{
+	width: 50%;
+}
+
+.footer-socialmedia{
+	width: 50%;
+}
+
+.footer-button{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 15px;
+}
+
+.footer-bnts{
+	padding: 3px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
