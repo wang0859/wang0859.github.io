@@ -1,0 +1,358 @@
+/*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+   	margin: 0;
+   	padding: 0;
+   	border: 0;
+   	font-size: 100%;
+   	font: inherit;
+   	vertical-align: baseline;
+   }
+   /* HTML5 display-role reset for older browsers */
+   article, aside, details, figcaption, figure, 
+   footer, header, hgroup, menu, nav, section {
+   	display: block;
+   }
+   body {
+   	line-height: 1;
+   }
+   ol, ul {
+   	list-style: none;
+   }
+   blockquote, q {
+   	quotes: none;
+   }
+   blockquote:before, blockquote:after,
+   q:before, q:after {
+   	content: '';
+   	content: none;
+   }
+   table {
+   	border-collapse: collapse;
+   	border-spacing: 0;
+   }
+
+   /*CSS clearfix*/
+
+   .clearfix:after {
+   	content: "";
+   	display: table;
+   	clear: both;
+   }
+
+   h1 {
+   	font-family: "Montserrat", sans-serif;
+   	font-weight: bold;
+   	font-size:5vw
+   }
+
+   @font-face{
+   	font-family: "OpenSans-Regular";
+   	src: url("../fonts/open-sans/OpenSans-Regular.ttf");
+   }
+
+   h2, h3, p, a, label, td{
+   	font-family: "OpenSans-Regular";
+   }
+
+   h2{
+   	font-size:3vw
+   }
+
+   h3{
+   	font-size:2vw
+   }
+
+   p, a, label{
+   	font-size:1.5vw
+   }
+   @keyframes spin {
+   	from {
+   		transform: rotate(0deg);
+   	}
+   	to {
+   		transform: rotate(-180deg);
+   	}
+   }
+
+
+   /*for the desktop*/
+   @media only screen and (min-width: 768px){
+   	.mainsite-content{
+   		height: auto;
+   		max-width: 1800px !important;
+   		display: flex;
+   	}
+   	.table-container{
+   		width: 100%;
+   		max-width: 1800px !important; 
+   	}
+
+   	.profile{
+   	height: auto;
+   	max-width: 1800px !important;
+   	display: flex;
+   	margin-bottom: 5%;
+   }
+   }
+   /*mobile first*/
+
+   .profile{
+   	height: auto;
+   	max-width: 700px;
+   	display: flex;
+   	margin-bottom: 5%;
+   }
+
+   .mainsite-content{
+   	height: auto;
+   	max-width: 700px;
+   	display: flex;
+   }
+
+   .table-container{
+   	width: 100%;
+   	max-width: 700px;
+   }
+
+   .main-content {
+   	width: 70%;
+   	box-sizing: border-box;
+   	padding-left: 15px;
+   	padding-right:15px;
+   }
+
+   .mainsite-sidebar {
+   	float: left;
+   	width: 30%;
+   	box-sizing: border-box;
+   	padding-left: 15px;
+   	padding-right:15px;
+   	height: 100%;
+   }
+
+   #logo {
+   	animation: spin 5s infinite alternate;
+   	height: 100px;
+   	padding-left: 50px;
+   	padding-top: 55px;
+   }
+
+   /*font color*/
+   #logo h1{
+   		color: #6ca6a7;
+   }
+
+   .body{
+   	background: url(../img/background.png);
+   	background-size: auto;
+   }
+
+   .main-nav{
+   	width: 100%;
+   }
+
+   .main-nav-button{
+   	width: 100%;
+   	display:flex;
+   	height: 30px;
+   	margin:auto;	
+   	text-align: center;
+   }
+
+   .nav-btns{
+   	background: #72a9ae;
+   	width: 20%;
+   	text-align: center;
+   	height: 30px;
+   	margin:auto;	
+   	display:flex;
+   }
+
+   a:link {
+   	text-decoration: none;
+   	color: black;
+   	margin:auto;	
+   }
+
+   .table-header{
+   	color:#6ca6a7;
+   }
+
+   .img-sidebar{
+   	margin-top: 40px;
+   	width: 30%;
+
+   }
+
+   /*center the image*/
+   .img-sidebar img{
+   	width: 90%;
+   	margin: auto;
+   	padding-top: 5%;
+   }
+
+   .h2-class{
+   	box-sizing: border-box;
+   	float: left;
+   	width: 100%;
+   	padding-left: 15px;
+   	padding-top: 10px;
+   	padding-bottom: 10px;
+   	color: #6ca6a7;
+   }
+
+   .table-class{
+   	box-sizing: border-box;
+   	width: 95%;
+   	margin:auto;
+   }
+   /*set borders for all cell*/
+   .table-class th, .table-class td{
+   	border: 1px solid black;
+   	padding: 5px;
+   }
+
+   #name-container, #email-container{
+   	box-sizing: border-box;
+   	float: left;
+   }
+
+   #form-id{
+   	width: 50%;
+   }
+
+   .form-element{
+   	width: 100%;
+   	padding-bottom: 10px;
+   }
+
+   .form-element label{
+   	display: inline-block;
+   	width: 45%;
+   	margin: auto;
+   }
+
+   .form-element input, .form-element select{
+   	display: inline-block;
+   	width: 50%;
+   	margin: auto;
+
+   }
+
+   #form-submit-btn{
+   	justify-content: flex-end;
+   	display: flex;
+   	width: 96%;
+   }
+
+   .form-container{
+   	width: 80%;
+   	padding-right: 15%;
+   	margin: auto;
+   }
+   #profile-id{
+   	width: 50%;
+
+   }
+   #profile-header{
+   	width: 100%;
+   	height: auto;
+   	float: none !important;
+   	margin-left: 6%;
+   }
+
+   .profile-card{
+   	width: 50%;
+   	height: 80%;
+   	margin-left: 10%;
+   	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	background-color: white;
+  	border-radius: 5px;
+   }
+
+   #profile-img-container{
+   	width: 100%;
+   	display: flex;
+   	justify-content: center;
+   	padding-top: 5%;
+   	padding-bottom: 5%;
+   }
+
+   #profile-content-container{
+   	width: 90%;
+   	text-align: center;
+   	padding:5%;
+   }
+
+    #profile-content-container h3{
+   	width: 100%;
+   	text-align: center;
+   	color: #6ca6a7;
+   	
+   }
+
+   #email-img{
+   	color: #6ca6a7;
+   }
+
+   .footer{
+   	width: 100%;
+   	background-color: #454545;
+   	display: flex;
+   }
+
+   .footer div{
+   	width: 33%;
+   	padding: 3%;
+   }
+
+   .footer-nav-btns{
+   	margin: 3%;
+   }
+
+   .social-button{
+   	display: flex;
+   	width: 100%;
+   }
+
+   .social-button li{
+   	width: 33%;
+   	padding: 2%;
+   	margin-top: 3%;
+   }
+
+   .addressnav h3{
+   	padding-bottom: 5%;
+   }
+   .links h3, .footer-nav-btns a, .socialmedia h3, .social-bnts a, .addressnav p, .addressnav h3{
+   	color: white;
+   }
+
+ 	#facebook-icon{
+ 		color: #1877F2;
+ 	}
+
+ 	#youtube-icon{
+ 		color: #CD201F;
+ 	}
+
+ 	#twitter-icon{
+		color: #1DA1F2;
+ 	}
